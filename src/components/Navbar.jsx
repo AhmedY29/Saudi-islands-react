@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
   return (
-    <nav className="nav-section flex  justify-center absolute bottom-0 w-full h-[10%] overflow-hidden bg-black/50 text-white py-5 z-10 hover:h-[70%] hover:lg:h-[40%] transition-all duration-200 ">
+    <nav
+      onClick={() => setOpen(!open)}
+      className={`nav-section flex justify-center absolute bottom-0 w-full h-[15%] ${
+        open ? "h-[70%] lg:h-[40%]" : ""
+      }   overflow-hidden bg-black/50 text-white py-5 z-10  transition-all duration-200 `}
+    >
       <div className="nav-content flex flex-col justify-between items-center w-[80%] gap-10">
         <h1 className="text-4xl">جزر سعودية</h1>
-        <div className="cards flex justify-between flex-wrap gap-5 ">
+        <div className="cards flex md:justify-between justify-center flex-wrap gap-5 ">
           <Link to={"/"}>
             <div className="card flex justify-center items-center shadow w-[15rem] h-[10rem] bg-cover brightness-50 hover:brightness-100 transition-all rounded-2xl cursor-pointer bg-[url(https://www.neom.com/content/dam/neom/sindalah/sindalah-map-new.png)]">
               <h1 className="text-2xl">سـندالة</h1>

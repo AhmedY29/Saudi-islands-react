@@ -10,10 +10,10 @@ function Omahat() {
       ></img>
       <div className=" flex flex-col justify-center items-center gap-3 text-4xl text-white absolute inset-0 w-full h-screen bg-black/40">
         <div className="flex flex-col gap-4 text-center p-5">
-          <h1 className="text-7xl">جزيرة امهات</h1>
+          <h1 className="text-7xl">جزيرة أمهات</h1>
           <p className="font-light text-sm">
             تضم جزيرة "أمهات" اثنان من أكثر منتجعات وجهة "البحر الأحمر" تميزًا،
-            منتجع "سانت ريجس البحر الأحمر"
+            منتجع "سانت ريجس البحر الأحمر" ومنتجع "نجومه، ريتز- كارلتون ريزيرف"
           </p>
         </div>
       </div>
